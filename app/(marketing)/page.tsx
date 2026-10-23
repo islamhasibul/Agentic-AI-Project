@@ -175,7 +175,7 @@ function WallPreview() {
               <Quote className="h-4 w-4 text-ember-400" /> Clean, quote-first typography
             </li>
             <li className="flex items-center gap-2">
-              <Globe2 className="h-4 w-4 text-ember-400" /> Edge-cached for sub-second loads
+              <Globe2 className="h-4 w-4 text-ember-400" /> Server-rendered for instant loads
             </li>
           </ul>
         </div>

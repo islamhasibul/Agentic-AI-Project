@@ -6,3 +6,6 @@ node_modules
 *.tsbuildinfo
 .DS_Store
 .vscode
+
+# Machine-specific local tool settings (permission history, per-device).
+.puku-cli/settings.local.json

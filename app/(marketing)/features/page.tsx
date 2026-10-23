@@ -20,8 +20,8 @@ const SECTIONS = [
     bullets: [
       "Single-link submissions, no account required",
       "Validated author name, email, role, company, and 20–2000 char body",
-      "Honeypot + per-IP and per-email rate limits",
-      "CSRF-protected form action",
+      "Honeypot field to deter bots",
+      "Submissions always start as pending — never self-approved",
     ],
     icon: MousePointerClick,
   },
@@ -32,7 +32,7 @@ const SECTIONS = [
     description:
       "An inbox that shows what's pending, what's approved, and what's been rejected. Decisions are a single click; featured items rise to the top of your wall.",
     bullets: [
-      "Status filter, search, and pagination",
+      "Status filter and search across your walls",
       "Featured flag for top-of-wall placement",
       "Audit-ready: who moderated and when",
       "Edit approved content with original retained (P1)",
@@ -42,13 +42,13 @@ const SECTIONS = [
   {
     id: "publish",
     label: "Publish",
-    title: "A public wall that loads instantly.",
+    title: "A public wall that's always up to date.",
     description:
-      "Server-rendered, edge-cached, and styled to feel like part of your brand. Embed it on your site or share its public URL.",
+      "Server-rendered, with the featured testimonials surfaced first, and styled to feel like part of your brand. Share its public URL with anyone.",
     bullets: [
       "Featured-first sort, then newest",
       "Open Graph metadata for social shares",
-      "Edge cache with on-demand revalidation (P1)",
+      "Refreshes the moment you approve a testimonial",
       "Embed via iframe (P1)",
     ],
     icon: Sparkles,
@@ -62,7 +62,7 @@ const SECTIONS = [
     bullets: [
       "Row-level security on every table",
       "Service-role key only on the server",
-      "CSRF and rate-limited public submissions",
+      "Submissions cannot approve themselves",
       "HTML-escaped user content at render time",
     ],
     icon: Globe2,
@@ -102,7 +102,7 @@ export default function FeaturesPage() {
           "Single-link collection form",
           "Inbox with status filters",
           "Featured-first sort",
-          "Edge-cached public wall",
+          "Always-current public wall",
           "Row-level security by default",
           "Open Graph & SEO ready",
         ].map((f) => (
